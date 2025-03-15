@@ -62,12 +62,12 @@ const Navbar = () => {
   }, [isMobileMenuOpen]);
 
   return (
-    <>
+    <header className="sticky top-0 left-0 right-0 z-50 w-full">
       <nav 
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`w-full transition-all duration-300 ${
           isScrolled 
             ? 'bg-[rgba(var(--color-background),0.85)] backdrop-blur-xl border-b border-[rgba(var(--color-primary),0.15)]' 
-            : 'bg-transparent'
+            : 'bg-[rgba(var(--color-background),0.5)] backdrop-blur-sm'
         }`}
         style={{
           boxShadow: isScrolled ? '0 4px 20px rgba(0, 0, 0, 0.15)' : 'none',
@@ -248,10 +248,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      
-      {/* Spacer to prevent content from being hidden under the navbar */}
-      <div className="h-16"></div>
-    </>
+    </header>
   );
 };
 
