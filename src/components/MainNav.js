@@ -10,7 +10,7 @@ export const MainNav = () => {
   
   const links = [
     {
-      title: "How to Play",
+      title: "How to Play hehe ",
       description: "Learn the rules and get started with FlipSOL",
       icon: "📖",
       href: "/how-to-play",
